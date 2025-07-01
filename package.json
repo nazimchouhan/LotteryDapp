@@ -4,12 +4,17 @@
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "hardhat run script/deploy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "alchemy-sdk": "^3.6.1",
+    "dotenv": "^16.6.1"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@nomiclabs/hardhat-waffle": "^2.0.6",
@@ -17,8 +22,5 @@
     "ethereum-waffle": "^4.0.10",
     "ethers": "^5.8.0",
     "hardhat": "^2.25.0"
-  },
-  "dependencies": {
-    "alchemy-sdk": "^3.6.1"
   }
 }

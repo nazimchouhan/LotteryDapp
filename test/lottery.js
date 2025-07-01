@@ -16,7 +16,8 @@ describe("Lottery Contract", function () {
   });
 
   it("should accept exactly 2 ETH from participants", async () => {
-    await lottery.connect(addr1).sendTransaction({
+    await lotter
+    y.connect(addr1).sendTransaction({
       to: lottery.address,
       value: ethers.utils.parseEther("2"),
     });
